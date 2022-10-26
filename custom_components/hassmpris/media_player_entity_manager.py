@@ -27,7 +27,10 @@ from homeassistant.helpers import entity_registry as er
 from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 import homeassistant.util.dt as dt_util
-from homeassistant.util.enum import intenum_to_string
+try:
+    from homeassistant.util.enum import intenum_to_string
+except ImportError
+    from homeassistant.components.hassmpris.enum import intenum_to_string
 
 from .const import ATTR_PLAYBACK_RATE, DOMAIN, LOGGER as _LOGGER
 
