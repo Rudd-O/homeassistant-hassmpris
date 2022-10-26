@@ -30,7 +30,7 @@ import homeassistant.util.dt as dt_util
 try:
     from homeassistant.util.enum import intenum_to_string
 except ImportError:
-    from homeassistant.components.hassmpris.enum import intenum_to_string
+    from .enum import intenum_to_string
 
 from .const import ATTR_PLAYBACK_RATE, DOMAIN, LOGGER as _LOGGER
 
