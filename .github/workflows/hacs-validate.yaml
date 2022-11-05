@@ -8,6 +8,7 @@ on:
 
 jobs:
   validate-hassfest:
+    name: hassfest action
     runs-on: "ubuntu-latest"
     steps:
         - name: check out
@@ -15,7 +16,7 @@ jobs:
         - name: hassfest validation
           uses: "home-assistant/actions/hassfest@master"
   validate-hacs:
-    name: HACS Action
+    name: HACS action
     runs-on: "ubuntu-latest"
     steps:
       - name: check out
