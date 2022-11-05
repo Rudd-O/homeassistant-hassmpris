@@ -1,5 +1,4 @@
 {
     "name": "MPRIS integration for Linux desktop media players",
-    "render_readme": true,
-    "issue_tracker": "https://github.com/Rudd-O/homeassistant-hassmpris/issues"
+    "render_readme": true
 }
