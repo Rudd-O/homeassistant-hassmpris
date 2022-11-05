@@ -2,10 +2,11 @@
   "domain": "hassmpris",
   "name": "MPRIS media playback remote control",
   "config_flow": true,
-  "documentation": "https://www.home-assistant.io/integrations/hassmpris",
+  "documentation": "https://github.com/home-assistant/home-assistant.io/blob/66401a47a3e1cbbea9b1efe7f6877d001322fba4/source/_integrations/hassmpris.markdown",
   "version": "0.0.1",
   "requirements": ["hassmpris_client==0.0.18"],
   "zeroconf": ["_hassmpris._tcp.local."],
   "codeowners": ["@Rudd-O"],
-  "iot_class": "local_push"
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/Rudd-O/homeassistant-hassmpris/issues"
 }
