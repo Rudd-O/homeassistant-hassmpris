@@ -1,25 +1,34 @@
-# Home Assistant MPRIS integration for Linux desktop media players
+# Connect your Linux music and video players to Home Assistant
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge)](https://github.com/hacs/integration)
 
-This integration allows you to control your media player applications (VLC, Chromium, Amarok) from Home Assistant.  Play your media, pause, stop, seek, and skip back/forward, directly from the comfort of your own couch, bedroom or mobile phone.  Media players can be governed by automations as well, so you can program your own actions (e.g. pause music when you leave home, or "Alexa, play with VLC").
+This software is the Home Assistant integration that lets you control all popular media player applications on Linux (VLC, Chromium, Amarok) directly from your Home Assistant hub.
+
+Play your songs / movies / TV shows; pause, stop, seek; skip back/forward, directly from the comfort of your own couch, bedroom, office, bathtub or mobile phone.  Automations can control media players as well — your own wishes are fully programmable (e.g. pause music when you leave home, or "Alexa, play with VLC").
 
 ## Setup
 
-First, setup the integration.  The following instructions assume you have HACS going and it works correctly with your Home Assistant.
+This setup process has two steps.
 
-* Add this (`homeassistant-hassmpris`) repository to your Home Assistant's HACS repositories.
-  * Go to HACS, then click on *Integrations* at the top bar, then on the overflow menu to the right, click *Custom repositories*.
-  * Paste this repository's URL in the Repository field, then select *integration* as the category.
+1. Set this integration up inside Home Assistant.
+2. Set the agent up on the computer you plan to control from Home Assistant.
+
+## Set the integration up
+
+The following instructions assume you have HACS going and it works correctly with your Home Assistant.
+
+* Add [this repository](https://github.com/Rudd-O/homeassistant-hassmpris) to your Home Assistant's HACS repositories.
+  * Go to the HACS panel in your Home Assistant UI, then click on *Integrations* at the top bar, then on the overflow menu to the right, click *Custom repositories*.
+  * Paste this repository's URL (linked above) in the Repository field, then select *integration* as the category.
   * Select *Add*.
-* Now you'll see the repository listed under the *Integrations* heading.  Install it as per the standard HACS integration installation instructions.
-* Remember to restart your Home Assistant instance.
+* Now click on the *Explore & download repositories* button at the bottom right of the HACS screen, then search for *MPRIS*. Yyou'll see the repository listed in the search results.  Install it as per the standard HACS integration installation instructions.
+* Remember to restart your Home Assistant service after installing this integration.
 
-Now, setup the agent in the computer you wish to control remotely.  Follow the [agent setup instructions here](https://pypi.org/project/hassmpris-agent/) under the heading *Setup*.
+## Set the agent up
 
-As you follow those instructions, you will eventually get to the section *Pair with Home Assistant*.  When you get there, go to your Home Assistant, navigate through *Settings* to *Devices & Services*, and add the MPRIS integration.  It is highly likely that you will see the MPRIS integration listed there, but if it isn't, you can always add the IP address of your computer manually by using the *Add integration* button and selecting the MPRIS integration.
+Now set the agent up in the computer you wish to control remotely.  Follow the [agent setup instructions here](https://pypi.org/project/hassmpris-agent/) under the heading *Setup*.
 
-From then on, you can pair your media computer with Home Assistant as per the instructions under *Pair with Home Assistant*.
+As you follow those instructions, you will eventually get to the section *Pair with Home Assistant*.  When you get there, go to your Home Assistant, navigate through *Settings* to *Devices & Services*, and see if your agent computer was discovered.  If you see an entry ready to set up, you can add the agent right away, paying attention to the agent setup instructions.  If it does not show up, however, you can always add the IP address of your agent computer manually by using the *Add integration* button and selecting the MPRIS integration.
 
 ## More information
 
